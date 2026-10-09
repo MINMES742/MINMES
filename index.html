@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人主页</title>
+<meta name="description" content="个人主页 —— 简介、技能、项目与联系方式">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232f6b4f'/></svg>">
+</head>
+<body>
+
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<!-- ================= 顶部导航 ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="brand-dot" aria-hidden="true"></span>
+      <span id="brandName">个人主页</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="页面导航"></nav>
+
+    <button class="icon-btn" id="themeToggle" type="button" aria-label="切换深浅色主题" title="切换深浅色主题">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4.2"/>
+        <path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/>
+      </svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M20 14.2A8.2 8.2 0 1 1 9.8 4a6.6 6.6 0 0 0 10.2 10.2Z"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= Hero ================= -->
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <div class="avatar" id="avatar" aria-hidden="true"></div>
+      <div class="hero-text">
+        <p class="eyebrow" id="eyebrow"></p>
+        <h1 id="heroName"></h1>
+        <p class="hero-role" id="heroRole"></p>
+        <p class="hero-tagline" id="heroTagline"></p>
+        <div class="pill-row" id="heroPills"></div>
+        <div class="hero-actions" id="heroActions"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 关于 ================= -->
+  <section class="section" id="about" data-reveal>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-num">01 / 关于</p>
+        <h2 class="section-title">关于我</h2>
+      </div>
+      <div class="about-body" id="aboutBody"></div>
+      <div class="stats" id="stats"></div>
+    </div>
+  </section>
+
+  <!-- ================= 技能 ================= -->
+  <section class="section" id="skills" data-reveal>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-num">02 / 技能</p>
+        <h2 class="section-title">我会什么</h2>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= 项目 ================= -->
+  <section class="section" id="projects" data-reveal>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-num">03 / 项目</p>
+        <h2 class="section-title">做过的事</h2>
+      </div>
+      <div class="projects" id="projectsList"></div>
+    </div>
+  </section>
+
+  <!-- ================= 联系 ================= -->
+  <section class="section" id="contact" data-reveal>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="section-num">04 / 联系</p>
+        <h2 class="section-title">聊聊？</h2>
+      </div>
+      <div class="contact-grid" id="contactGrid"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span id="footerText"></span>
+    <span id="footerCopy"></span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部" title="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M12 19V5M5.5 11.5 12 5l6.5 6.5"/>
+  </svg>
+</button>
+
+<!-- 内容数据：想改资料只改 data.js -->
+<script src="data.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
